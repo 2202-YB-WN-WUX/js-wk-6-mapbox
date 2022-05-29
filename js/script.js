@@ -1,21 +1,8 @@
-//jquery is going to run this whole function
-// once the page has loaded
-$(function() {
-  // looks for the input with the name birthday and attaches the date range picker plugin
-  $('input[name="birthday"]').daterangepicker({
-    singleDatePicker: true,
-    showDropdowns: true,
-    minYear: 1901,
-    maxYear: parseInt(moment().format('YYYY'),10)
-  })
-})
-;
+mapboxgl.accessToken = 'pk.eyJ1IjoidGltc3Rhbm5hcmQ5OSIsImEiOiJjbDJ2Y3l5eG4wYXQ1M2pvYXQ0enV1djZjIn0.-5tfA6QNFW8egI8KDX_Twg';
 
-$(function() {
-  $('input[name="daterange"]').daterangepicker({
-    showDropdowns: true,
-    minYear: 1901,
-    maxYear: parseInt(moment().format('YYYY'),10)
-  })
-})
-;
+const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/timstannard99/cl3rxi446000l14l8p2vo24xk', // style URL
+    center: [-74.5, 40], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+});
