@@ -5,7 +5,7 @@ body {
   padding:50px;
   background: url("../img/ffflux.svg");
   background-size:cover;
-
+  background-repeat:no-repeat;
 }
 
 #map {
@@ -18,4 +18,33 @@ body {
 
 #map-container {
   position:relative;
+}
+
+.marker {
+  background-color:black;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  border: 5px solid white;
+}
+
+.popup-image {
+  width:100%;
+}
+
+.mapboxgl-popup-content{
+  background:tomato;
+}
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip, .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
+    border-bottom-color: tomato;
+      border-top-color:tomato;
+}
+
+.mapboxgl-popup-close-button {
+    position: absolute;
+    right: -3px;
+    top: -6px;
+    border: 0;
+    color: white;
+    font-size: 29px;
 }
